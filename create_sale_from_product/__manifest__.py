@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Create Sale From Product",
+    'name': "Create Sale Order From Product",
     'version': '18.0.0.1.0',
     'category': 'Sales',
     'author': "Mayank",
