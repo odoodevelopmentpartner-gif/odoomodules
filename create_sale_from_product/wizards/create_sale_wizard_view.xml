@@ -1,0 +1,30 @@
+<odoo>
+    <record id="view_create_sale_wizard" model="ir.ui.view">
+        <field name="name">create.sale.wizard.form</field>
+        <field name="model">create.sale.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Create Sale Order">
+                <group>
+                    <field name="partner_id"/>
+                    <field name="order_date"/>
+                </group>
+
+                <group string="Products">
+                    <field name="line_ids">
+                        <list editable="bottom">
+                            <field name="product_id"/>
+                            <field name="quantity"/>
+                            <field name="price_unit"/>
+                        </list>
+                    </field>
+                </group>
+
+                <footer>
+                    <button name="create_sale_order" type="object" class="btn-primary"
+                            string="Create Sale Order"/>
+                    <button special="cancel" string="Cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>
