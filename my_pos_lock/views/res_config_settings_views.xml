@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form_my_pos_lock" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.my.pos.lock</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="point_of_sale.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//block[@id='pos_interface_section']" position="inside">
+                <setting id="my_pos_auto_lock_setting"
+                         string="POS Auto Lock"
+                         help="Lock open POS after idle time. Common timeout for all, or per-employee timeouts.">
+                    <field name="pos_auto_lock"/>
+                    <div class="content-group mt16" invisible="not pos_auto_lock">
+                        <div class="row mb8">
+                            <label for="pos_auto_lock_use_common" class="col-lg-5 o_light_label"
+                                   string="Use common timeout for all employees"/>
+                            <field name="pos_auto_lock_use_common" class="col-lg-3"/>
+                        </div>
+                        <div class="row" invisible="not pos_auto_lock_use_common">
+                            <label for="pos_auto_lock_timeout" class="col-lg-5 o_light_label"
+                                   string="Common timeout (seconds)"/>
+                            <field name="pos_auto_lock_timeout" class="col-lg-3"/>
+                        </div>
+                        <div class="text-muted mt8" invisible="not pos_auto_lock_use_common">
+                            Same idle timeout for every employee on this Point of Sale.
+                        </div>
+                        <div class="text-muted mt8" invisible="pos_auto_lock_use_common">
+                            Per-employee: set timeout on each employee form. Common timeout field is hidden.
+                        </div>
+                    </div>
+                </setting>
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_employee_form_my_pos_lock" model="ir.ui.view">
+        <field name="name">hr.employee.form.my.pos.lock</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='pin']" position="after">
+                <field name="pos_auto_lock_timeout"
+                         string="POS Auto Lock Timeout (sec)"
+                         help="Used when the POS is configured for per-employee timeouts (not common mode). 0 = fallback to the POS common timeout value."/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

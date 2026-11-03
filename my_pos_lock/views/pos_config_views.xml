@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="pos_config_view_form_my_pos_lock" model="ir.ui.view">
+        <field name="name">pos.config.form.my.pos.lock</field>
+        <field name="model">pos.config</field>
+        <field name="inherit_id" ref="point_of_sale.pos_config_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//setting[@id='other_devices']" position="before">
+                <setting id="my_pos_auto_lock"
+                         string="POS Auto Lock"
+                         help="Lock the register after inactivity. Unlock with employee PIN.">
+                    <field name="pos_auto_lock"/>
+                    <div class="content-group mt16" invisible="not pos_auto_lock">
+                        <div class="row mb8">
+                            <label for="pos_auto_lock_use_common" class="col-lg-5 o_light_label"
+                                   string="Use common timeout for all employees"/>
+                            <field name="pos_auto_lock_use_common" class="col-lg-3"/>
+                        </div>
+                        <div class="row" invisible="not pos_auto_lock_use_common">
+                            <label for="pos_auto_lock_timeout" class="col-lg-5 o_light_label"
+                                   string="Common timeout (seconds)"/>
+                            <field name="pos_auto_lock_timeout" class="col-lg-3"/>
+                        </div>
+                        <div class="text-muted mt8" invisible="not pos_auto_lock_use_common">
+                            One timeout applies to every employee on this POS.
+                        </div>
+                        <div class="text-muted mt8" invisible="pos_auto_lock_use_common">
+                            Each employee uses their own timeout (Employees → Settings → POS Auto Lock Timeout).
+                            Common timeout field is hidden; value 0 on an employee still uses the stored common seconds as fallback.
+                        </div>
+                    </div>
+                </setting>
+            </xpath>
+        </field>
+    </record>
+</odoo>
