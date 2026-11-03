@@ -1,162 +1,94 @@
-<section class="oe_container" style="padding:0;">
+<section class="oe_container">
 
-    <!-- HERO -->
-    <div style="background:#714b67; background:linear-gradient(135deg,#2d2037 0%,#714b67 100%); color:#ffffff; border-radius:10px; padding:35px 30px; margin:20px 0; text-align:center;">
-        <h1 style="margin:0 0 10px; font-size:36px; font-weight:700; color:#ffffff;">POS Auto Lock</h1>
-        <p style="margin:0 0 18px; font-size:18px; color:#ffffff;">
-            Lock your Point of Sale automatically after idle time.<br/>
-            Use <strong>one common timeout</strong> for everyone or a <strong>separate timeout per employee</strong>.
-            Unlock with the employee PIN.
-        </p>
-        <div>
-            <span style="display:inline-block; background:#00a09d; color:#ffffff; border-radius:20px; padding:4px 14px; margin:3px; font-size:13px;">Odoo 20</span>
-            <span style="display:inline-block; background:#ffffff; color:#714b67; border-radius:20px; padding:4px 14px; margin:3px; font-size:13px;">Common / Separate switch</span>
-            <span style="display:inline-block; background:#ffffff; color:#714b67; border-radius:20px; padding:4px 14px; margin:3px; font-size:13px;">Employee PIN</span>
-            <span style="display:inline-block; background:#ffffff; color:#714b67; border-radius:20px; padding:4px 14px; margin:3px; font-size:13px;">pos_hr</span>
-        </div>
-    </div>
+<div class="oe_row oe_spaced" style="text-align:center;">
+<table width="100%" cellpadding="0" cellspacing="0" style="width:100%; border-collapse:collapse;">
+<tr><td bgcolor="#714b67" style="background-color:#714b67; color:#ffffff; padding:30px 24px; text-align:center;">
+<h1 style="margin:0 0 10px; font-size:34px; color:#ffffff;">POS Auto Lock</h1>
+<p style="margin:0 0 14px; font-size:17px; color:#ffffff;">Lock your Point of Sale automatically after idle time.<br/>Use <b>one common timeout for all employees</b> or a <b>separate timeout per employee</b>. Unlock with the employee PIN.</p>
+<p style="margin:0; font-size:14px; color:#ffffff;"><b>Odoo 20</b> &nbsp;|&nbsp; Common / Separate switch &nbsp;|&nbsp; Employee PIN &nbsp;|&nbsp; pos_hr</p>
+</td></tr>
+</table>
+<p style="margin:20px 0;"><a href="https://youtu.be/AqXoFe_RdH8" target="_blank" style="background-color:#ff0000; color:#ffffff; font-weight:bold; text-decoration:none; padding:10px 22px; border-radius:5px; display:inline-block;">&#9654; Watch Demo Video</a></p>
+</div>
 
-    <!-- VIDEO -->
-    <div style="text-align:center; margin:25px 0;">
-        <h2 style="color:#714b67; font-size:26px; margin:0 0 15px;">Demo Video</h2>
-        <div style="max-width:800px; margin:0 auto;">
-            <iframe width="100%" height="450" src="https://www.youtube.com/embed/AqXoFe_RdH8" frameborder="0" allowfullscreen="allowfullscreen" style="border:0; border-radius:8px;"></iframe>
-        </div>
-        <p style="margin-top:15px;">
-            <a href="https://youtu.be/AqXoFe_RdH8" target="_blank" rel="noopener" style="display:inline-block; background:#ff0000; color:#ffffff; font-weight:700; text-decoration:none; padding:10px 22px; border-radius:6px;">Watch Demo on YouTube</a>
-        </p>
-    </div>
+<div class="oe_row oe_spaced">
+<h2 style="color:#714b67; border-bottom:2px solid #714b67; padding-bottom:6px;">Overview</h2>
+<p style="font-size:16px;"><b>POS Auto Lock</b> locks an open register after idle time. The session stays open, only the screen is locked. Unlock uses the standard employee PIN or badge (<code>pos_hr</code>).</p>
+<p style="font-size:16px;">One setting controls the mode:</p>
+<ul style="font-size:16px;">
+<li><b style="color:#00a09d;">Use common timeout = ON</b> &rarr; one timeout for every employee. The common timeout field is shown.</li>
+<li><b style="color:#714b67;">Use common timeout = OFF</b> &rarr; each employee uses their own timeout. The common timeout field is hidden.</li>
+</ul>
+</div>
 
-    <!-- OVERVIEW -->
-    <h2 style="color:#714b67; font-size:26px; margin:35px 0 12px; padding-bottom:8px; border-bottom:2px solid #e9ecef;">Overview</h2>
-    <div style="background:#ffffff; border:1px solid #e9ecef; border-radius:8px; padding:20px 24px;">
-        <p style="font-size:16px; line-height:1.6;">
-            <strong>POS Auto Lock</strong> locks an open register after idle time. The session stays open; only the screen is locked.
-            Unlock uses the standard employee PIN or badge (<code>pos_hr</code>).
-        </p>
-        <p style="font-size:16px; line-height:1.6;">A single setting controls the mode:</p>
-        <ul style="font-size:16px; line-height:1.7;">
-            <li><strong style="color:#00a09d;">Use common timeout = ON</strong> &rarr; one timeout for every employee. The common timeout field is shown.</li>
-            <li><strong style="color:#714b67;">Use common timeout = OFF</strong> &rarr; each employee uses their own timeout. The common timeout field is hidden.</li>
-        </ul>
-    </div>
+<div class="oe_row oe_spaced">
+<h2 style="color:#714b67; border-bottom:2px solid #714b67; padding-bottom:6px;">Key Features</h2>
+<table width="100%" cellpadding="12" cellspacing="0" style="width:100%; border-collapse:collapse; font-size:15px;">
+<tr>
+<td width="50%" valign="top" style="width:50%; border:1px solid #dddddd; padding:14px;"><b style="color:#714b67; font-size:17px;">Common vs separate switch</b><br/>Enable &ldquo;Use common timeout for all employees&rdquo; to force one timeout. Disable it to use per-employee values.</td>
+<td width="50%" valign="top" style="width:50%; border:1px solid #dddddd; padding:14px;"><b style="color:#714b67; font-size:17px;">Common timeout field</b><br/>Visible only when common mode is ON. The same idle seconds apply to every cashier on this POS.</td>
+</tr>
+<tr>
+<td width="50%" valign="top" style="width:50%; border:1px solid #dddddd; padding:14px;"><b style="color:#714b67; font-size:17px;">Per-employee timeout</b><br/>Set on the employee form when common mode is OFF. A value of 0 falls back to the common timeout.</td>
+<td width="50%" valign="top" style="width:50%; border:1px solid #dddddd; padding:14px;"><b style="color:#714b67; font-size:17px;">PIN unlock</b><br/>Uses the native Login Screen with employee PIN or badge. The session is never closed.</td>
+</tr>
+</table>
+</div>
 
-    <!-- FEATURES -->
-    <h2 style="color:#714b67; font-size:26px; margin:35px 0 12px; padding-bottom:8px; border-bottom:2px solid #e9ecef;">Key Features</h2>
-    <div class="row">
-        <div class="col-md-6" style="margin-bottom:15px;">
-            <div style="background:#ffffff; border:1px solid #e9ecef; border-radius:8px; padding:16px 18px; min-height:110px;">
-                <strong style="color:#714b67; display:block; margin-bottom:6px; font-size:17px;">Common vs separate switch</strong>
-                Enable &ldquo;Use common timeout for all employees&rdquo; to force one timeout. Disable it to use per-employee values.
-            </div>
-        </div>
-        <div class="col-md-6" style="margin-bottom:15px;">
-            <div style="background:#ffffff; border:1px solid #e9ecef; border-radius:8px; padding:16px 18px; min-height:110px;">
-                <strong style="color:#714b67; display:block; margin-bottom:6px; font-size:17px;">Common timeout field</strong>
-                Visible only when common mode is ON. The same idle seconds apply to every cashier on this POS.
-            </div>
-        </div>
-        <div class="col-md-6" style="margin-bottom:15px;">
-            <div style="background:#ffffff; border:1px solid #e9ecef; border-radius:8px; padding:16px 18px; min-height:110px;">
-                <strong style="color:#714b67; display:block; margin-bottom:6px; font-size:17px;">Per-employee timeout</strong>
-                Set on the employee form when common mode is OFF. A value of 0 falls back to the common timeout.
-            </div>
-        </div>
-        <div class="col-md-6" style="margin-bottom:15px;">
-            <div style="background:#ffffff; border:1px solid #e9ecef; border-radius:8px; padding:16px 18px; min-height:110px;">
-                <strong style="color:#714b67; display:block; margin-bottom:6px; font-size:17px;">PIN unlock</strong>
-                Uses the native Login Screen with employee PIN or badge. The session is never closed.
-            </div>
-        </div>
-    </div>
+<div class="oe_row oe_spaced">
+<h2 style="color:#714b67; border-bottom:2px solid #714b67; padding-bottom:6px;">Timeout Rules</h2>
+<table width="100%" cellpadding="10" cellspacing="0" style="width:100%; border-collapse:collapse; font-size:15px;">
+<tr>
+<th align="left" bgcolor="#714b67" style="background-color:#714b67; color:#ffffff; padding:10px; text-align:left; border:1px solid #714b67;">Configuration</th>
+<th align="left" bgcolor="#714b67" style="background-color:#714b67; color:#ffffff; padding:10px; text-align:left; border:1px solid #714b67;">Effective timeout</th>
+</tr>
+<tr><td valign="top" style="border:1px solid #dddddd; padding:10px;"><b>Common mode ON</b></td><td valign="top" style="border:1px solid #dddddd; padding:10px;">Always the POS common timeout (seconds). Employee values are ignored.</td></tr>
+<tr><td valign="top" style="border:1px solid #dddddd; padding:10px;"><b>Common mode OFF</b> + employee timeout &gt; 0</td><td valign="top" style="border:1px solid #dddddd; padding:10px;">That employee&rsquo;s own timeout.</td></tr>
+<tr><td valign="top" style="border:1px solid #dddddd; padding:10px;"><b>Common mode OFF</b> + employee timeout = 0</td><td valign="top" style="border:1px solid #dddddd; padding:10px;">Falls back to the POS common timeout value (the field may be hidden in the UI).</td></tr>
+<tr><td valign="top" style="border:1px solid #dddddd; padding:10px;">POS Auto Lock disabled</td><td valign="top" style="border:1px solid #dddddd; padding:10px;">No auto-lock (manual lock is still available when Log in with Employees is on).</td></tr>
+</table>
+</div>
 
-    <!-- TIMEOUT RULES -->
-    <h2 style="color:#714b67; font-size:26px; margin:35px 0 12px; padding-bottom:8px; border-bottom:2px solid #e9ecef;">Timeout Rules</h2>
-    <table style="width:100%; border-collapse:collapse; background:#ffffff; border:1px solid #e9ecef;">
-        <thead>
-            <tr>
-                <th style="background:#714b67; color:#ffffff; padding:10px 14px; text-align:left;">Configuration</th>
-                <th style="background:#714b67; color:#ffffff; padding:10px 14px; text-align:left;">Effective timeout</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td style="padding:10px 14px; border-bottom:1px solid #e9ecef; vertical-align:top;"><strong style="color:#00a09d;">Common mode ON</strong></td>
-                <td style="padding:10px 14px; border-bottom:1px solid #e9ecef; vertical-align:top;">Always the POS common timeout (seconds). Employee values are ignored.</td>
-            </tr>
-            <tr>
-                <td style="padding:10px 14px; border-bottom:1px solid #e9ecef; vertical-align:top;"><strong style="color:#714b67;">Common mode OFF</strong> + employee timeout &gt; 0</td>
-                <td style="padding:10px 14px; border-bottom:1px solid #e9ecef; vertical-align:top;">That employee&rsquo;s own timeout.</td>
-            </tr>
-            <tr>
-                <td style="padding:10px 14px; border-bottom:1px solid #e9ecef; vertical-align:top;"><strong style="color:#714b67;">Common mode OFF</strong> + employee timeout = 0</td>
-                <td style="padding:10px 14px; border-bottom:1px solid #e9ecef; vertical-align:top;">Falls back to the POS common timeout value (the field may be hidden in the UI).</td>
-            </tr>
-            <tr>
-                <td style="padding:10px 14px; vertical-align:top;">POS Auto Lock disabled</td>
-                <td style="padding:10px 14px; vertical-align:top;">No auto-lock (manual lock is still available when Log in with Employees is on).</td>
-            </tr>
-        </tbody>
-    </table>
+<div class="oe_row oe_spaced">
+<h2 style="color:#714b67; border-bottom:2px solid #714b67; padding-bottom:6px;">Screenshots</h2>
 
-    <!-- SCREENSHOTS -->
-    <h2 style="color:#714b67; font-size:26px; margin:35px 0 12px; padding-bottom:8px; border-bottom:2px solid #e9ecef;">Screenshots</h2>
+<h3 style="color:#333333;">1. Common mode ON - common timeout visible</h3>
+<img class="img img-responsive" src="common.png" alt="Common timeout enabled" style="max-width:100%; border:1px solid #cccccc;"/>
+<p style="color:#666666;">Enable <b>POS Auto Lock</b>, turn ON <b>Use common timeout for all employees</b> and set <b>Common timeout (seconds)</b>. Every employee uses this value.</p>
 
-    <h3 style="color:#343a40; font-size:19px; margin:20px 0 8px;">1. Common mode ON &ndash; common timeout visible</h3>
-    <img src="common.png" alt="POS Settings: common timeout enabled" style="width:100%; max-width:100%; border:1px solid #dee2e6; border-radius:8px; margin:8px 0;"/>
-    <p style="color:#6c757d; font-size:14px;">
-        Enable <strong>POS Auto Lock</strong>, turn ON <strong>Use common timeout for all employees</strong> and set
-        <strong>Common timeout (seconds)</strong>. Every employee uses this value.
-    </p>
+<h3 style="color:#333333;">2. Common mode OFF - common field hidden</h3>
+<img class="img img-responsive" src="common_off.png" alt="Per-employee mode" style="max-width:100%; border:1px solid #cccccc;"/>
+<p style="color:#666666;">Turn OFF <b>Use common timeout for all employees</b>. The common timeout field is hidden and timeouts are taken from each employee form.</p>
 
-    <h3 style="color:#343a40; font-size:19px; margin:20px 0 8px;">2. Common mode OFF &ndash; common field hidden</h3>
-    <img src="common_off.png" alt="POS Settings: per-employee mode" style="width:100%; max-width:100%; border:1px solid #dee2e6; border-radius:8px; margin:8px 0;"/>
-    <p style="color:#6c757d; font-size:14px;">
-        Turn OFF <strong>Use common timeout for all employees</strong>. The common timeout field is hidden and
-        timeouts are taken from each employee form.
-    </p>
+<h3 style="color:#333333;">3. Employee-specific timeout</h3>
+<img class="img img-responsive" src="saperate.png" alt="Employee POS Auto Lock Timeout" style="max-width:100%; border:1px solid #cccccc;"/>
+<p style="color:#666666;">Employees &rarr; employee form &rarr; Settings &rarr; Attendance/Point of Sale &rarr; <b>POS Auto Lock Timeout (sec)</b>. Used when common mode is OFF. 0 = fallback to the common value.</p>
+</div>
 
-    <h3 style="color:#343a40; font-size:19px; margin:20px 0 8px;">3. Employee-specific timeout</h3>
-    <img src="saperate.png" alt="Employee form: POS Auto Lock Timeout" style="width:100%; max-width:100%; border:1px solid #dee2e6; border-radius:8px; margin:8px 0;"/>
-    <p style="color:#6c757d; font-size:14px;">
-        Employees &rarr; employee form &rarr; Settings &rarr; Attendance/Point of Sale &rarr;
-        <strong>POS Auto Lock Timeout (sec)</strong>. Used when common mode is OFF. 0 = fallback to the common value.
-    </p>
+<div class="oe_row oe_spaced">
+<h2 style="color:#714b67; border-bottom:2px solid #714b67; padding-bottom:6px;">Configuration Steps</h2>
+<ol style="font-size:16px;">
+<li>Install <code>my_pos_lock</code>, enable <b>Log in with Employees</b> on the POS and set employee PIN codes.</li>
+<li>Enable <b>POS Auto Lock</b> on the POS configuration or in Settings &rarr; Point of Sale.</li>
+<li>Choose the mode:
+<ul>
+<li><b>Common:</b> enable &ldquo;Use common timeout for all employees&rdquo; and set the timeout in seconds.</li>
+<li><b>Separate:</b> disable that option and set <b>POS Auto Lock Timeout</b> on each employee.</li>
+</ul></li>
+<li>Open the POS, log in as an employee and leave it idle. The register locks after the effective timeout.</li>
+</ol>
+<p style="border-left:4px solid #00a09d; padding:8px 14px; background-color:#e8f5f4;"><b>Requirement:</b> Auto-lock works only when <b>Log in with Employees</b> is enabled, so unlocking is always tied to an employee PIN or badge.</p>
+</div>
 
-    <!-- CONFIGURATION -->
-    <h2 style="color:#714b67; font-size:26px; margin:35px 0 12px; padding-bottom:8px; border-bottom:2px solid #e9ecef;">Configuration Steps</h2>
-    <div style="background:#ffffff; border:1px solid #e9ecef; border-radius:8px; padding:12px 24px;">
-        <ol style="font-size:16px; line-height:1.7; padding-left:20px;">
-            <li style="margin:10px 0;">Install <code>my_pos_lock</code>, enable <strong>Log in with Employees</strong> on the POS and set employee PIN codes.</li>
-            <li style="margin:10px 0;">Enable <strong>POS Auto Lock</strong> on the POS configuration or in Settings &rarr; Point of Sale.</li>
-            <li style="margin:10px 0;">
-                Choose the mode:
-                <ul>
-                    <li><strong>Common:</strong> enable &ldquo;Use common timeout for all employees&rdquo; and set the timeout in seconds.</li>
-                    <li><strong>Separate:</strong> disable that option and set <strong>POS Auto Lock Timeout</strong> on each employee.</li>
-                </ul>
-            </li>
-            <li style="margin:10px 0;">Open the POS, log in as an employee and leave it idle. The register locks after the effective timeout.</li>
-        </ol>
-    </div>
-
-    <div style="background:#e8f5f4; border-left:4px solid #00a09d; padding:12px 16px; margin:20px 0; border-radius:0 6px 6px 0;">
-        <strong>Requirement:</strong> Auto-lock works only when <strong>Log in with Employees</strong> is enabled,
-        so unlocking is always tied to an employee PIN or badge.
-    </div>
-
-    <!-- TECHNICAL -->
-    <h2 style="color:#714b67; font-size:26px; margin:35px 0 12px; padding-bottom:8px; border-bottom:2px solid #e9ecef;">Technical Information</h2>
-    <div style="background:#ffffff; border:1px solid #e9ecef; border-radius:8px; padding:12px 24px;">
-        <ul style="font-size:16px; line-height:1.7;">
-            <li><strong>Technical name:</strong> <code>my_pos_lock</code></li>
-            <li><strong>Version:</strong> 20.0.1.0.0</li>
-            <li><strong>Depends:</strong> <code>point_of_sale</code>, <code>pos_hr</code>, <code>hr</code></li>
-            <li><strong>License:</strong> OPL-1</li>
-            <li><strong>Author:</strong> Mayank</li>
-        </ul>
-    </div>
-
-    <p style="text-align:center; color:#6c757d; font-size:14px; margin:30px 0 10px;">POS Auto Lock &middot; my_pos_lock &middot; Odoo 20</p>
+<div class="oe_row oe_spaced">
+<h2 style="color:#714b67; border-bottom:2px solid #714b67; padding-bottom:6px;">Technical Information</h2>
+<ul style="font-size:16px;">
+<li><b>Technical name:</b> <code>my_pos_lock</code></li>
+<li><b>Version:</b> 20.0.1.0.0</li>
+<li><b>Depends:</b> <code>point_of_sale</code>, <code>pos_hr</code>, <code>hr</code></li>
+<li><b>License:</b> OPL-1</li>
+<li><b>Author:</b> Mayank</li>
+</ul>
+</div>
 
 </section>
